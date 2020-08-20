@@ -1569,7 +1569,7 @@ public class FoodGui  {
 			public void  getTime(String RName) { //// Gets restaurants hours of operation.
 			    String URL = "jdbc:sqlserver://occam.cs.qc.cuny.edu\\dbclass:21433;allowMultiQueries=true";
 			    String User = "SinghJ_C915";
-			    String Password = "23328120";
+			    String Password = "";
 			    String name="SELECT * FROM Time Where Name like "+RName;
 			    Connection con;
 				  Statement st ;
@@ -1623,7 +1623,7 @@ public class FoodGui  {
 			public void  AddTime(String Name,String Hours, String Days ) {// Adding time to a new Restaurant.
 			    String URL = "jdbc:sqlserver://occam.cs.qc.cuny.edu\\dbclass:21433;allowMultiQueries=true";
 			    String User = "SinghJ_C915";
-			    String Password = "23328120";
+			    String Password = "";
 			    String dd="'"+Name+"'";
 			    String dd3="'"+Hours+"'";
 			    String dd4="'"+Days+"'";
@@ -1649,7 +1649,7 @@ public class FoodGui  {
 			public void  AddMenus(String Name,String Distance, String MenuName ) {
 			    String URL = "jdbc:sqlserver://occam.cs.qc.cuny.edu\\dbclass:21433;allowMultiQueries=true";
 			    String User = "SinghJ_C915";
-			    String Password = "23328120";
+			    String Password = "";
 			    String dd="'"+Name+"'";
 			    String dd3="'"+Distance+"'";
 			    String dd4="'"+MenuName+"'";
@@ -1675,7 +1675,7 @@ public class FoodGui  {
 			public void  AddItems(String Name,String Distance, String Col,String Ite ) { // Adding new items to restaurant.
 			    String URL = "jdbc:sqlserver://occam.cs.qc.cuny.edu\\dbclass:21433;allowMultiQueries=true";
 			    String User = "SinghJ_C915";
-			    String Password = "23328120";
+			    String Password = "";
 			    String Na="'"+Name+"'";
 			    String Da="'"+Distance+"'";
 			    String Pri="'"+ePrice.getText()+"'";
@@ -1703,7 +1703,7 @@ public class FoodGui  {
 			public void  AddItems2(String Name,String Distance, String Col,String Ite ) {
 			    String URL = "jdbc:sqlserver://occam.cs.qc.cuny.edu\\dbclass:21433;allowMultiQueries=true";
 			    String User = "SinghJ_C915";
-			    String Password = "23328120";
+			    String Password = "";
 			    String Na="'"+Name+"'";
 			    String Da="'"+Distance+"'";
 			    String Pri="'"+ePrice.getText()+"'";
@@ -1726,7 +1726,7 @@ public class FoodGui  {
 			public void  DeleteR(String Name ) { //Deleting a Restaurant from Database
 			    String URL = "jdbc:sqlserver://occam.cs.qc.cuny.edu\\dbclass:21433;allowMultiQueries=true";
 			    String User = "SinghJ_C915";
-			    String Password = "23328120";
+			    String Password = "";
 			    String Na="'"+Name+"'"
 			 		String Delete="Delete FROm FoodInfo Where Name= "+Na;
 			    Connection con;
@@ -1746,7 +1746,7 @@ public class FoodGui  {
 			public void  DeleteCol(String Name, String Menu,String Col,String Item ) {// Deleting Items from restaurant.
 			    String URL = "jdbc:sqlserver://occam.cs.qc.cuny.edu\\dbclass:21433;allowMultiQueries=true";
 			    String User = "SinghJ_C915";
-			    String Password = "23328120";
+			    String Password = "";
 			    String Na="'"+Item+"'";
 			 		String Delete="Delete FROm "+Menu+" Where "+Col+"="+Na;
 			    Connection con;
@@ -1766,7 +1766,7 @@ public class FoodGui  {
 			public void  ModTime(String Name,String Hours, String Days ) {// Changing restaurant time.
 			    String URL = "jdbc:sqlserver://occam.cs.qc.cuny.edu\\dbclass:21433;allowMultiQueries=true";
 			    String User = "SinghJ_C915";
-			    String Password = "23328120";
+			    String Password = "";
 			    String dd="'"+Name+"'";
 			    String dd3="'"+Hours+"'";
 			    String dd4="'"+Days+"'";
@@ -1789,7 +1789,7 @@ public class FoodGui  {
 			public void  ModItems(String Name, String Menu,String Col,String Item, String nItem ) {//Modifying restaurant items.
 			    String URL = "jdbc:sqlserver://occam.cs.qc.cuny.edu\\dbclass:21433;allowMultiQueries=true";
 			    String User = "SinghJ_C915";
-			    String Password = "23328120";
+			    String Password = "";
 			    String Na="'"+Item+"'";
 			    String it="'"+nItem+"'";
 			    String it0="'"+Item+"'";
